@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X=UA-compatible" content="ie-edge">
-        <title>Form</title>
-    </head>
-<body>
+@extends('layouts.master')
+@section('title')
+Halaman Biodata
+@endsection
+
+@section('content')
     <h1>Create New Account!</h1>
     <h2>Sign Up From</h2>
     <form action="/register" method="POST">
@@ -47,6 +44,4 @@
     </form>
 </head>
 <body>
-
-</body>
-</html>
+@endsection

@@ -20,3 +20,10 @@ Route::get('/',  [HomeController::class, 'home']);
 Route::get('/register',  [AuthController::class, 'register']);
 
 Route::post('/register', [AuthController::class, 'store']);
+
+Route::get('/data-table' , function(){
+    return view('partials.data-table');
+});
+Route::get('/table', function(){
+    return view('partials.table');
+});
